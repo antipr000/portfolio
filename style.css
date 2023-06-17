@@ -1,0 +1,195 @@
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    width: 100vw;
+    height: 70px;
+}
+
+.color-white {
+    background: #ffffffff;
+}
+
+.navbar>ul {
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar>ul>li {
+    display: inline-block;
+    text-decoration: none;
+    list-style: none;
+}
+
+.nav-btn {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.nav-btn:hover {
+    text-decoration: none;
+    color: #000000;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.main-container {
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: unset;
+    margin: unset;
+    display: flex;
+}
+
+.section {
+    display: flex;
+    min-height: 350px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    max-width: 40%;
+    text-overflow: ellipsis;
+}
+
+.intro>span {
+    margin-top: 10px;
+
+}
+
+.profile-pic {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.simple-btn {
+    padding: 2px;
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 0;
+}
+
+.btn-red {
+    background-color: #FF6465;
+    color: #ffffffff;
+}
+
+.intro>button {
+    margin-top: 20px;
+    align-self: flex-start;
+}
+
+.bg-light-blue {
+    background-color: #EDF7FA;
+}
+
+.work-experience-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding-left: 200px;
+}
+
+.company-logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .navbar>ul {
+        height: calc(100vh - 70px);
+        position: absolute;
+        z-index: 1000;
+        top: 70px;
+        left: 0;
+        width: 100vw;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        visibility: hidden;
+        background: #ffffffff;
+    }
+
+    .nav-btn {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .nav-btn:hover {
+        font-size: 1.3em;
+    }
+
+    .menu-toggle {
+        display: block;
+        text-decoration: none;
+        color: #000000;
+    }
+
+    .container {
+        position: absolute;
+        z-index: 999;
+        top: 70px;
+        left: 0;
+    }
+
+    .section {
+        flex-direction: column-reverse;
+        height: calc(100vh - 70px);
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .intro {
+        display: flex;
+        flex-direction: column;
+        max-width: 90%;
+        text-overflow: ellipsis;
+        align-items: center;
+    }
+
+    .intro>span {
+        margin-top: 10px;
+    }
+
+    .profile-pic {
+        width: 150px;
+        height: 150px;
+    }
+
+    .intro>button {
+        align-self: center;
+    }
+
+    .work-experience-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+}
